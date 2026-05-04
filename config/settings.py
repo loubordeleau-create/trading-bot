@@ -21,6 +21,9 @@ class TradingConfig:
         "BTC/USDT",
         "ETH/USDT",
         "SOL/USDT",
+        "XRP/USDT",
+        "LINK/USDT",
+        "ADA/USDT",
     ])
 
     timeframes: List[str] = field(default_factory=lambda: ["15m", "1h", "4h"])
@@ -34,8 +37,8 @@ class TradingConfig:
     max_total_exposure: float = 0.80
     max_leverage: float = 1.0
 
-    # Kelly plus agressif
-    kelly_fraction: float = 0.35
+    # Risque 0.25% par trade
+    kelly_fraction: float = 0.25
 
     atr_stop_mult: float = 1.5
     atr_target_mult: float = 2.0
