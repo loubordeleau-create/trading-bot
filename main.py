@@ -454,7 +454,7 @@ class TradingBot:
             return RegimeAssessment(
                 regime="ranging", regime_score=5.0, confidence_mult=1.0,
                 kill_switch=False, kill_reason=None,
-                reasoning="Mode technique pur, pas de classification IA", raw={},
+                reasoning="Mode technique pur, pas de classification IA", raw={}, enabled_strategies=["trend_surfer", "mean_reversion"],
             )
 
         # Contexte externe minimal (en v2 on ajouterait news feed)
