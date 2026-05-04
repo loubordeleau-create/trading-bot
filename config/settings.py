@@ -24,6 +24,7 @@ class TradingConfig:
         "XRP/USDT",
         "LINK/USDT",
         "ADA/USDT",
+        "DOGE/USDT",
     ])
 
     timeframes: List[str] = field(default_factory=lambda: ["15m", "1h", "4h"])
